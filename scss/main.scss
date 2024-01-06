@@ -8,12 +8,32 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $primary-color;
+  font-family: $font-stackl;
 }
 
 nav {
-  background-color: $primary-color;
-  width: 100%;
+  width: auto;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: $primary-text-color;
+  padding: 15px;
+
+  p {
+    font-size: 1.5em;
+    padding-left: 30 px;
+  }
+
+  .nav__icons-container {
+    display: flex;
+    gap: 15px;
+
+    button {
+      background: none;
+      border-style: none;
+    }
+  }
 }
 
 main {

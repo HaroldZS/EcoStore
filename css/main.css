@@ -2,12 +2,29 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #ffefe7;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 nav {
-  background-color: #ffefe7;
-  width: 100%;
+  width: auto;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: #7c6a0a;
+  padding: 15px;
+}
+nav p {
+  font-size: 1.5em;
+  padding-left: 30 px;
+}
+nav .nav__icons-container {
+  display: flex;
+  gap: 15px;
+}
+nav .nav__icons-container button {
+  background: none;
+  border-style: none;
 }
 
 main {
