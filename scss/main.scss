@@ -81,6 +81,11 @@ nav {
     border-radius: 35px;
     color: white;
     font-size: 1em;
+
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+    }
   }
 
   img {
@@ -212,6 +217,29 @@ section {
 
 .mission-section__innovation {
   @extend .mission-section__earth;
+}
+
+.info-section__gallery {
+  h2 {
+    font-weight: bold;
+    padding-bottom: 60px;
+  }
+
+  .gallery__pictures {
+    @include flexCenter(row, space-between);
+
+    img {
+      width: 28vw;
+      height: 45vh;
+      object-fit: cover;
+      border-radius: 16px;
+
+      &:hover {
+        transform: scale(1.1);
+        transition-duration: 0.3s;
+      }
+    }
+  }
 }
 
 footer {

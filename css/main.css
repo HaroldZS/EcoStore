@@ -67,6 +67,10 @@ nav .nav__icons-container button {
   color: white;
   font-size: 1em;
 }
+.main__article button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
 .main__article img {
   width: 35vw;
   height: 60vh;
@@ -187,6 +191,27 @@ section .product-section__furniture .healtcare__card-section .card-section__prod
 .info-section__about-us .about-us__mission-section .mission-section__earth p, .info-section__about-us .about-us__mission-section .mission-section__innovation p {
   text-align: center;
   font-size: 1.5em;
+}
+
+.info-section__gallery h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.info-section__gallery .gallery__pictures {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info-section__gallery .gallery__pictures img {
+  width: 28vw;
+  height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+.info-section__gallery .gallery__pictures img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
 }
 
 footer {
