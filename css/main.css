@@ -19,7 +19,9 @@ nav {
   width: auto;
   height: 100px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #7c6a0a;
   padding: 15px;
   margin-top: 20px;
@@ -43,7 +45,9 @@ nav .nav__icons-container button {
   color: #7c6a0a;
   padding: 0 45px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .main__article h1 {
   font-size: 3em;
@@ -52,10 +56,13 @@ nav .nav__icons-container button {
   font-size: 1.5em;
 }
 .main__article button {
+  background: none;
+  border-style: none;
+}
+.main__article button {
   width: 12vw;
   padding: 20px;
   background-color: #fa9500;
-  border-style: none;
   border-radius: 35px;
   color: white;
   font-size: 1em;
@@ -75,6 +82,7 @@ nav .nav__icons-container button {
 .main__article .article__image-section {
   width: 50%;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
 }
 
@@ -100,10 +108,11 @@ section .product-section__healtcare h2, section .product-section__furniture h2 {
 }
 section .product-section__healtcare .healtcare__card-section, section .product-section__furniture .healtcare__card-section {
   display: flex;
-  width: auto;
-  height: auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: auto;
+  height: auto;
   -moz-column-gap: 200px;
        column-gap: 200px;
   row-gap: 80px;
@@ -121,6 +130,7 @@ section .product-section__healtcare .healtcare__card-section .card-section__prod
 section .product-section__healtcare .healtcare__card-section .card-section__product .product__icon, section .product-section__furniture .healtcare__card-section .card-section__product .product__icon {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   padding-bottom: 12px;
 }
@@ -133,6 +143,7 @@ section .product-section__healtcare .healtcare__card-section .card-section__prod
   width: 100%;
   height: auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 12px;

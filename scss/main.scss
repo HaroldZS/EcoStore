@@ -6,6 +6,20 @@ $quaternary-color: #fa9500;
 $font-stackl: "IBM Plex Sans", sans-serif;
 $paragraph-size: 1.5em;
 
+@mixin flexCenter($direction, $content: null, $align: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $align;
+}
+
+@mixin buttonStyle {
+  button {
+    background: none;
+    border-style: none;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,8 +41,7 @@ body {
 nav {
   width: auto;
   height: 100px;
-  display: flex;
-  justify-content: space-between;
+  @include flexCenter(row, space-between, center);
   color: $primary-text-color;
   padding: 15px;
   margin-top: 20px;
@@ -42,11 +55,7 @@ nav {
     display: flex;
     gap: 15px;
     align-items: flex-start;
-
-    button {
-      background: none;
-      border-style: none;
-    }
+    @include buttonStyle;
   }
 }
 
@@ -54,8 +63,7 @@ nav {
   width: auto;
   color: $primary-text-color;
   padding: 0 45px;
-  display: flex;
-  justify-content: space-between;
+  @include flexCenter(row, space-between, center);
 
   h1 {
     font-size: 3em;
@@ -65,11 +73,11 @@ nav {
     font-size: $paragraph-size;
   }
 
+  @include buttonStyle;
   button {
     width: 12vw;
     padding: 20px;
     background-color: $quaternary-color;
-    border-style: none;
     border-radius: 35px;
     color: white;
     font-size: 1em;
@@ -83,15 +91,13 @@ nav {
   }
 
   .article__impact-section {
-    display: flex;
-    flex-direction: column;
+    @include flexCenter(column);
     gap: 20px;
   }
 
   .article__image-section {
     width: 50%;
-    display: flex;
-    justify-content: flex-end;
+    @include flexCenter(row, flex-end);
   }
 }
 
@@ -118,11 +124,9 @@ section {
     }
 
     .healtcare__card-section {
-      display: flex;
+      @include flexCenter(row, center, center);
       width: auto;
       height: auto;
-      justify-content: center;
-      align-items: center;
       column-gap: 200px;
       row-gap: 80px;
       flex-wrap: wrap;
@@ -138,8 +142,7 @@ section {
 
         .product__icon {
           width: 100%;
-          display: flex;
-          justify-content: flex-end;
+          @include flexCenter(row, flex-end);
           padding-bottom: 12px;
 
           svg {
@@ -152,9 +155,7 @@ section {
         .product__image {
           width: 100%;
           height: auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flexCenter(row, center, center);
           margin-bottom: 12px;
 
           img {
