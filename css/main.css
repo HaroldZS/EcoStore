@@ -11,6 +11,9 @@ body {
   background-color: #ffefe7;
   font-family: "IBM Plex Sans", sans-serif;
 }
+body svg path {
+  stroke: currentColor;
+}
 
 nav {
   width: auto;
@@ -58,7 +61,10 @@ nav .nav__icons-container button {
   font-size: 1em;
 }
 .main__article img {
-  width: 25vw;
+  width: 35vw;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 19px;
 }
 .main__article .article__impact-section {
@@ -69,11 +75,79 @@ nav .nav__icons-container button {
 .main__article .article__image-section {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 main {
   background-color: #ffefe7;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #7c6a0a;
+  font-size: 2em;
+}
+section .product-section__healtcare, section .product-section__furniture {
+  padding-bottom: 60px;
+}
+section .product-section__healtcare h2, section .product-section__furniture h2 {
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+section .product-section__healtcare .healtcare__card-section, section .product-section__furniture .healtcare__card-section {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  row-gap: 80px;
+  flex-wrap: wrap;
+}
+section .product-section__healtcare .healtcare__card-section .card-section__product, section .product-section__furniture .healtcare__card-section .card-section__product {
+  width: 14vw;
+  min-width: 270px;
+  height: 480px;
+  background-color: #ffdac6;
+  color: #7c6a0a;
+  padding: 20px;
+  border-radius: 8px;
+}
+section .product-section__healtcare .healtcare__card-section .card-section__product .product__icon, section .product-section__furniture .healtcare__card-section .card-section__product .product__icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .product-section__healtcare .healtcare__card-section .card-section__product .product__icon svg, section .product-section__furniture .healtcare__card-section .card-section__product .product__icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: #7c6a0a;
+}
+section .product-section__healtcare .healtcare__card-section .card-section__product .product__image, section .product-section__furniture .healtcare__card-section .card-section__product .product__image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+section .product-section__healtcare .healtcare__card-section .card-section__product .product__image img, section .product-section__furniture .healtcare__card-section .card-section__product .product__image img {
+  width: 12vw;
+  min-width: 210px;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+section .product-section__furniture .healtcare__card-section .card-section__product {
+  background-color: #babd8d;
+  color: white;
 }
 
 footer {

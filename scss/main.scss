@@ -18,6 +18,10 @@ body {
   box-sizing: border-box;
   background-color: $primary-color;
   font-family: $font-stackl;
+
+  svg path {
+    stroke: currentColor;
+  }
 }
 
 nav {
@@ -72,7 +76,9 @@ nav {
   }
 
   img {
-    width: 25vw;
+    width: 35vw;
+    height: 60vh;
+    object-fit: cover;
     border-radius: 19px;
   }
 
@@ -85,12 +91,93 @@ nav {
   .article__image-section {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 }
 
 main {
   background-color: $primary-color;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+
+  h2 {
+    color: $primary-text-color;
+    font-size: 2em;
+  }
+
+  .product-section__healtcare {
+    padding-bottom: 60px;
+
+    h2 {
+      font-weight: 300;
+      padding-bottom: 60px;
+    }
+
+    .healtcare__card-section {
+      display: flex;
+      width: auto;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      column-gap: 200px;
+      row-gap: 80px;
+      flex-wrap: wrap;
+
+      .card-section__product {
+        width: 14vw;
+        min-width: 270px;
+        height: 480px;
+        background-color: $secundary-color;
+        color: $primary-text-color;
+        padding: 20px;
+        border-radius: 8px;
+
+        .product__icon {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          padding-bottom: 12px;
+
+          svg {
+            width: 28px;
+            height: 28px;
+            stroke: #7c6a0a;
+          }
+        }
+
+        .product__image {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 12px;
+
+          img {
+            width: 12vw;
+            min-width: 210px;
+            height: 30vh;
+            object-fit: cover;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .product-section__furniture {
+    @extend .product-section__healtcare;
+    .healtcare__card-section {
+      .card-section__product {
+        background-color: $tertiary-color;
+        color: white;
+      }
+    }
+  }
 }
 
 footer {
