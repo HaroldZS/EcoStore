@@ -181,6 +181,39 @@ section {
   }
 }
 
+.info-section__about-us {
+  padding-bottom: 60px;
+
+  h2 {
+    font-weight: bold;
+    padding-bottom: 60px;
+  }
+
+  .about-us__mission-section {
+    @include flexCenter(row, space-evenly, center);
+
+    .mission-section__earth {
+      width: 30vw;
+      display: flex;
+      gap: 40px;
+      color: #e86424;
+
+      img {
+        object-fit: contain;
+      }
+
+      p {
+        text-align: center;
+        font-size: $paragraph-size;
+      }
+    }
+  }
+}
+
+.mission-section__innovation {
+  @extend .mission-section__earth;
+}
+
 footer {
   background-color: $quaternary-color;
   width: 100%;

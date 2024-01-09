@@ -161,6 +161,34 @@ section .product-section__furniture .healtcare__card-section .card-section__prod
   color: white;
 }
 
+.info-section__about-us {
+  padding-bottom: 60px;
+}
+.info-section__about-us h2 {
+  font-weight: bold;
+  padding-bottom: 60px;
+}
+.info-section__about-us .about-us__mission-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.info-section__about-us .about-us__mission-section .mission-section__earth, .info-section__about-us .about-us__mission-section .mission-section__innovation {
+  width: 30vw;
+  display: flex;
+  gap: 40px;
+  color: #e86424;
+}
+.info-section__about-us .about-us__mission-section .mission-section__earth img, .info-section__about-us .about-us__mission-section .mission-section__innovation img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.info-section__about-us .about-us__mission-section .mission-section__earth p, .info-section__about-us .about-us__mission-section .mission-section__innovation p {
+  text-align: center;
+  font-size: 1.5em;
+}
+
 footer {
   background-color: #fa9500;
   width: 100%;
