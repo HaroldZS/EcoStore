@@ -214,8 +214,36 @@ section .product-section__furniture .healtcare__card-section .card-section__prod
   transition-duration: 0.3s;
 }
 
+.info-section__location {
+  color: #e86424;
+}
+.info-section__location h2 {
+  padding: 60px 0;
+}
+.info-section__location .location__map {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.info-section__location h3,
+.info-section__location p {
+  font-size: 1.5em;
+}
+
 footer {
   background-color: #fa9500;
   width: 100%;
   height: 250px;
+  padding: 40px;
+  color: white;
+}
+footer .footer__social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 0;
 }/*# sourceMappingURL=main.css.map */
